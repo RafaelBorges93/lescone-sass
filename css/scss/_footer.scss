@@ -1,0 +1,31 @@
+footer {
+  padding: 20px 0;
+  background: $cinza;
+  @include box-shadow(0 0 0 10px $cinza);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include d(s) {
+      display: block;
+    }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    display: inline-block;
+    color: $background;
+    @include d(s) {
+      text-align: center;
+    }
+  }
+  a img {    
+    float: right;
+    margin-right: 10px;    
+    @include d(s) {
+      float: none;
+      margin: 20px auto;
+    }
+  }
+}
